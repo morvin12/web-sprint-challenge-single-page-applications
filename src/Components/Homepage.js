@@ -1,5 +1,5 @@
 import React from "react";
-import { link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import "../App.css"
 
 const Home = () => {
@@ -11,8 +11,9 @@ const Home = () => {
             </nav>
             <h2>Time to Eat?</h2>
             <nav>
+            <Link to="/pizza" id="order-pizza">
             <h2>Start Your Custom Order</h2>
-            <Link id="order-pizza" to="/pizza" />
+            </Link>
             </nav>
         </div>
     )
