@@ -71,7 +71,7 @@ const App = () => {
       name: formValues.name.trim(),
       size: formValues.size,
       sauce: formValues.sauce,
-      toppings: ['pepperoni', 'onions', 'olives', 'artichoke'].filter(topping => !!formValues[topping]),
+      toppings: ['pepperoni', 'onions', 'olives', 'artichokes'].filter(topping => !!formValues[topping]),
       special: formValues.special.trim(),
     };
 
@@ -100,6 +100,9 @@ const App = () => {
     </div>
 
     <Switch>
+      <Route exact path="/">
+        <Home />
+      </Route>
       <Route path="/pizza">
         <PizzaForm
         values={formValues}
@@ -109,9 +112,6 @@ const App = () => {
         errors={formErrors}
         />
       </Route>
-      <Route path="/">
-        <Home />
-      </Route>
       <Route path="/order">
         <Order details={orders} />
       </Route>
@@ -120,4 +120,5 @@ const App = () => {
 
   );
 };
+
 export default App;

@@ -1,29 +1,13 @@
-import React from 'react'
-//While there are missing order details, app provides fetching order details 
-function Order({ details }) {
-  if (!details) {
-    return <h3>Fetching your order details...</h3>
-  }
-//Order details loading.
-  return (
-    <div className='order container'>
-      <h2>Your Order Details</h2>
-      <p>Name:{details.name}</p>
-      <p>Size:{details.size}</p>
-      <p>Special Instructions: {details.special}</p>
+import React from "react";
 
-      {
-        !!details.toppings && !!details.toppings.length &&
-        <div>
-          Toppings:
-          <ul>
-            {details.toppings.map((pick) => 
-                <li >{pick}</li>)}
-          </ul>
-        </div>
-      }
-      
+const Order = ({details}) => {
+return (
+    <div className="order container">
+        <h2>Order Details</h2>
+        <p>Name:{details.name}</p>
+        <p>Size:{details.size}</p>
+        <p>Special Instructions:{details.special}</p>
     </div>
-  )
+)
 }
-export default Order
+export default Order;

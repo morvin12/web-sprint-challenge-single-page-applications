@@ -90,10 +90,10 @@ const PizzaForm = (props) => {
                         checked={values.olives}
                     />
                 </label>
-                <label>Artichoke
+                <label>Artichokes
                     <input
                         type='checkbox'
-                        name='artichoke'
+                        name='artichokes'
                         onChange={onChange}
                         checked={values.artichoke}
                     />
