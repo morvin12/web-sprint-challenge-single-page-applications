@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { link, Switch, Route } from 'react-router-dom';
+import { Link, Switch, Route } from 'react-router-dom';
 import "./App.css";
 import axios from "axios";
 import * as yup from 'yup';
@@ -93,9 +93,9 @@ const App = () => {
     <div className="navigation">
       <h1>Lambda Eats</h1>
       <nav>
-      <link to="/">Home</link>
-      <link to="/pizza">Order Pizza</link>
-      <link to="/completion">Completion</link>
+      <Link to="/">Home</Link>
+      <Link to="/pizza">Order Pizza</Link>
+      <Link to="/completion">Completion</Link>
       </nav>
     </div>
 
