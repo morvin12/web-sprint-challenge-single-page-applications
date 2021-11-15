@@ -6,13 +6,12 @@ const Home = () => {
     return (
         <div className="homepage">
             <nav>
-            <h1>Lambda Coded Pizza</h1>
-            <Link to="/">Home</Link>
+            <h2>Lambda Coded Pizza</h2>
             </nav>
-            <h2>Pizza?</h2>
+            <h2>Want Pizza?</h2>
             <nav>
             <Link to="/pizza" id="order-pizza">
-            <h2>Start Your Custom Order</h2>
+            <h3>Start Your Custom Order Here </h3>
             </Link>
             </nav>
         </div>

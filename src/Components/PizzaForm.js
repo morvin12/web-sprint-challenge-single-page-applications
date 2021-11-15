@@ -46,7 +46,7 @@ const PizzaForm = (props) => {
                         <option value="Large">Large</option>
                     </select>
                 </label>
-                <label>Marinara
+                <label>Marinara Sauce
                     <input
                         type='radio'
                         name='sauce'
@@ -55,7 +55,7 @@ const PizzaForm = (props) => {
                         checked={values.sauce === 'marinara'} 
                     />
                 </label>
-                <label>Alfredo
+                <label>Alfredo Sauce
                     <input
                         type='radio'
                         name='sauce'
