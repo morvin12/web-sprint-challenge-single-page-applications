@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const PizzaForm = (props) => {
     const {
@@ -113,6 +114,9 @@ const PizzaForm = (props) => {
                     <div>{errors.name}</div>
                     <div>{errors.size}</div>
                 </div>
+                <Link id= "order-details" to="/order">
+                <button id="order-button" type="submit" value= "Submit Order">Submit Order</button>
+                </Link>
             </form>
         </div>
     )
